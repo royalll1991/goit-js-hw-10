@@ -1,0 +1,49 @@
+.form{max-width: 360px;
+display: flex;
+flex-direction: column;}
+
+.delay-input{display: flex;
+flex-direction: column;
+color: #2E2F42;
+margin-bottom: 30px;
+}
+.delay-input input[type="number"]{font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em; 
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    height: 40px;}
+
+.delay-input input[type="number"]:hover{border-radius: 4px;
+    border: 1px solid #000;}
+    
+.delay-input input[type="number"]:focus{border-radius: 4px;
+    border: 1px solid #4E75FF;
+    outline: none;}    
+
+fieldset{display: flex;
+justify-content: space-around;
+color: #2E2F42;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5em;
+margin-bottom: 24px;
+}
+
+button{padding: 8px 16px;
+color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1/5em; 
+letter-spacing: 0.64px;
+border-radius: 8px;
+background: #4E75FF;}
+
+button:hover{background: #6C8CFF;}
