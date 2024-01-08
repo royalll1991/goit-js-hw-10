@@ -32,4 +32,6 @@ document.querySelector('form').addEventListener('submit', function (event) {
       (delay) => iziToast.show({
         message: `❌ Rejected promise in ${delay}ms`
       }))
+
+      this.reset();
   });

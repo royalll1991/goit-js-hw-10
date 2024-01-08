@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   startButton.addEventListener('click', function() {
     startCountdownTimer();
+    startButton.setAttribute('disabled', 'disabled');
+    datetimePicker.setAttribute(`disabled`, `disabled`);
   });
 
   function startCountdownTimer() {
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (remainingTime <= 0) {
         clearInterval(timerInterval);
         updateCountdownDisplay(0, 0, 0, 0);
-        startButton.setAttribute('disabled', 'disabled');
+        
       } else {
         const { days, hours, minutes, seconds } = convertMs(remainingTime);
         updateCountdownDisplay(days, hours, minutes, seconds);
